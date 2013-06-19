@@ -78,7 +78,7 @@ describe Student, "validations" do
 
   it "shouldn't allow two students with the same email" do
     another_student = Student.create!(
-      :first_name => "Second",
+    :first_name => "Second",
       :last_name => "Student",
       :birthday => @student.birthday,
       :email => @student.email,

@@ -5,6 +5,8 @@ class Student < ActiveRecord::Base
   validates :age, :numericality => { :greater_than => 5 }
   validates :phone, :format => { :with => /\D*\d{3}\D*\d{3}\D*\d{4}/ }
 
+  belongs_to :teacher
+
   def name
     "#{self.first_name} #{self.last_name}"
   end
