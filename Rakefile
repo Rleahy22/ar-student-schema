@@ -4,6 +4,7 @@ require 'faker'
 require_relative 'db/config'
 require_relative 'lib/students_importer'
 require_relative 'app/models/teacher'
+require_relative 'app/models/studentsteacher'
 
 desc "open a console with the application loaded"
 task "console" do
